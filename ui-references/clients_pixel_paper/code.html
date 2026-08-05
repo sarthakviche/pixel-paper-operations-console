@@ -1,0 +1,417 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Clients - Pixel &amp; Paper</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#323537",
+                      "bg-elevated": "#1B2024",
+                      "outline-variant": "#3d4a3e",
+                      "tertiary-fixed": "#8ff8b4",
+                      "on-tertiary-fixed": "#00210f",
+                      "border-strong": "rgba(255, 255, 255, 0.12)",
+                      "on-surface-variant": "#bccabb",
+                      "surface-container-lowest": "#0c0f11",
+                      "on-tertiary-container": "#005e34",
+                      "border-subtle": "rgba(255, 255, 255, 0.06)",
+                      "on-secondary-fixed-variant": "#005321",
+                      "on-background": "#e1e2e5",
+                      "status-warning": "#FACC15",
+                      "secondary-fixed": "#6bff8f",
+                      "status-info": "#60A5FA",
+                      "text-primary": "#F5F7F8",
+                      "tertiary": "#8df6b2",
+                      "primary": "#6bfb9a",
+                      "outline": "#869486",
+                      "on-primary-container": "#005e2d",
+                      "on-secondary": "#003915",
+                      "tertiary-fixed-dim": "#73db9a",
+                      "inverse-surface": "#e1e2e5",
+                      "on-error": "#690005",
+                      "secondary-container": "#00b954",
+                      "status-success": "#4ADE80",
+                      "surface-bright": "#37393c",
+                      "primary-container": "#4ade80",
+                      "tertiary-container": "#70d998",
+                      "on-primary-fixed": "#00210c",
+                      "on-primary": "#003919",
+                      "inverse-primary": "#006d36",
+                      "surface": "#111416",
+                      "on-tertiary-fixed-variant": "#00522d",
+                      "surface-dim": "#111416",
+                      "surface-container": "#1d2022",
+                      "on-primary-fixed-variant": "#005227",
+                      "inverse-on-surface": "#2e3133",
+                      "error": "#ffb4ab",
+                      "text-disabled": "#5E656D",
+                      "on-secondary-fixed": "#002109",
+                      "surface-container-low": "#191c1e",
+                      "error-container": "#93000a",
+                      "primary-fixed": "#6dfe9c",
+                      "on-secondary-container": "#004119",
+                      "bg-secondary": "#151A1D",
+                      "surface-container-high": "#272a2c",
+                      "text-secondary": "#C8CDD1",
+                      "surface-tint": "#4de082",
+                      "primary-fixed-dim": "#4de082",
+                      "background": "#111416",
+                      "text-muted": "#8C949C",
+                      "secondary": "#4ae176",
+                      "secondary-fixed-dim": "#4ae176",
+                      "status-danger": "#F87171",
+                      "on-surface": "#e1e2e5",
+                      "on-tertiary": "#00391d",
+                      "surface-container-highest": "#323537",
+                      "on-error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "scale-md": "16px",
+                      "margin": "32px",
+                      "scale-xl": "32px",
+                      "scale-2xl": "48px",
+                      "max-width": "1200px",
+                      "scale-lg": "24px",
+                      "scale-sm": "8px",
+                      "gutter": "24px",
+                      "scale-xs": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #111416; /* background */
+            color: #F5F7F8; /* text-primary */
+        }
+        
+        .nav-item-active {
+            background-color: rgba(0, 185, 84, 0.1); /* secondary-container/10 */
+        }
+        
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111416; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #323537; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4de082; 
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden font-body-md text-body-md bg-surface dark:bg-surface text-primary dark:text-primary">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col h-full p-scale-md w-[240px] sticky left-0 top-0 border-r border-strong dark:border-strong bg-surface dark:bg-surface shrink-0 z-40">
+<!-- Header -->
+<div class="flex items-center gap-3 mb-8 px-2">
+<div class="w-10 h-10 rounded-lg bg-bg-elevated flex items-center justify-center overflow-hidden border-subtle">
+<img class="w-full h-full object-cover" data-alt="A minimalist, geometric agency logo featuring abstract intersecting shapes in neon green on a dark charcoal background. The design is sleek, modern, and tech-forward, representing a creative operating system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYsoRgur5oNxKrXF3EBE1q1zsAxXpmnYwHhSYxpWnEGDbQQZ9hDQO71W1hlGhsGuIdrNuIPBjN2qbu_cQxPQM2vwApcuw6rWb80EqxAhVoQlMKuZYR_YLygMalv1GT29_ov-hKxKfN2r4l8W_v1qVZ472b9aEaGb-1dr1AQV6DHSMfmqmDSshfl-rtDqQTrL87Ev_M4Eo-82f2crsSIRTSzruDlw9axYJLf_7byRQaC_gl4x1bttC_">
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary leading-tight">Pixel &amp; Paper</h2>
+<p class="font-caption text-caption text-text-muted">Creative OS</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg font-body-sm text-body-sm group" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-primary dark:text-primary font-medium bg-secondary-container/10 rounded-lg font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">group</span>
+                Clients
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg font-body-sm text-body-sm group" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors">edit_square</span>
+                Editors
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg font-body-sm text-body-sm group" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors">fact_check</span>
+                Approvals
+            </a>
+</nav>
+<!-- CTA -->
+<div class="mt-auto pt-4 border-t border-strong">
+<button class="w-full py-2 px-4 bg-primary text-on-primary rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors flex items-center justify-center gap-2 active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                New Project
+            </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-screen overflow-hidden">
+<!-- TopNavBar -->
+<header class="h-16 w-full sticky top-0 z-50 flex justify-between items-center px-scale-lg border-b border-strong dark:border-strong bg-surface/80 dark:bg-surface/80 backdrop-blur-md shrink-0">
+<!-- Mobile Menu Toggle (Visible only on mobile) -->
+<button class="md:hidden text-text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Search (Left Aligned per JSON) -->
+<div class="hidden md:flex flex-1 max-w-md">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none">search</span>
+<input class="w-full bg-transparent border-none text-text-primary font-body-sm text-body-sm pl-10 py-2 focus:ring-0 placeholder:text-text-muted outline-none" placeholder="Search clients, projects..." type="text">
+</div>
+</div>
+<!-- Mobile Brand (Visible only on mobile) -->
+<div class="md:hidden font-headline-sm text-headline-sm font-bold text-primary dark:text-primary">
+                Pixel &amp; Paper
+            </div>
+<!-- Trailing Actions & Profile -->
+<div class="flex items-center gap-4">
+<button class="p-2 text-text-muted hover:text-text-primary transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-strong cursor-pointer hover:border-primary transition-colors">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a user profile in a dimly lit, modern office environment. Soft, dramatic lighting highlights the subject's face against a dark background, fitting a sleek, premium tech platform aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6reILnA__A91YX4qhj9z93MVM2397CC8PevZ4KFXoI2lRyiHWx8-1JCHzwC01TSbLvNV43rtIiE4EKpXMps1QeNsAUzQsilq9mI2AEdQBvL5S6-pTDZ_VwFmrzC0HxtN3FNvmXlZ_RDAZrO7VZuZGdyW2GwPznnc62NQ4r3EPkvST216MfAGIp-HO25zXi2UADj0nsQuRfAlyFj7xgzUDuONxJ-8USzGy8_H3UVRrVIX2ZxVXjksJ">
+</div>
+</div>
+</header>
+<!-- Canvas Area -->
+<main class="flex-1 overflow-y-auto p-scale-lg lg:p-margin pb-32">
+<div class="max-w-[1200px] mx-auto w-full">
+<!-- Page Header -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+<h1 class="font-headline-xl text-headline-xl text-text-primary">Clients</h1>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<!-- Search Filter -->
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span>
+<input class="w-full bg-transparent border border-subtle rounded-lg text-text-primary font-body-sm text-body-sm pl-9 pr-4 py-2 focus:ring-1 focus:ring-primary focus:border-primary placeholder:text-text-muted transition-all outline-none" placeholder="Filter clients..." type="text">
+</div>
+<button class="py-2 px-4 bg-primary text-on-primary rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors flex items-center gap-2 whitespace-nowrap shrink-0">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                            New Client
+                        </button>
+</div>
+</div>
+<!-- Bento Grid of Client Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-bg-elevated rounded-xl p-scale-md flex flex-col gap-4 group cursor-pointer hover:bg-surface-variant transition-colors border border-transparent hover:border-subtle">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-primary font-medium border border-subtle group-hover:border-primary/30 transition-colors">
+                                AC
+                            </div>
+<button class="text-text-muted opacity-0 group-hover:opacity-100 transition-opacity hover:text-text-primary p-1">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Acme Corp</h4>
+<p class="font-body-sm text-body-sm text-text-muted">4 active projects · Next deadline in 3 days</p>
+</div>
+<div class="mt-auto pt-4 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-primary/10 border border-primary/20 font-caption text-caption text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Active
+                            </span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-bg-elevated rounded-xl p-scale-md flex flex-col gap-4 group cursor-pointer hover:bg-surface-variant transition-colors border border-transparent hover:border-subtle">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-tertiary font-medium border border-subtle group-hover:border-tertiary/30 transition-colors">
+                                GL
+                            </div>
+<button class="text-text-muted opacity-0 group-hover:opacity-100 transition-opacity hover:text-text-primary p-1">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Global Logistics</h4>
+<p class="font-body-sm text-body-sm text-text-muted">2 active projects · Next deadline in 5 days</p>
+</div>
+<div class="mt-auto pt-4 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-primary/10 border border-primary/20 font-caption text-caption text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Active
+                            </span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-bg-elevated rounded-xl p-scale-md flex flex-col gap-4 group cursor-pointer hover:bg-surface-variant transition-colors border border-transparent hover:border-subtle">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-status-warning font-medium border border-subtle group-hover:border-status-warning/30 transition-colors">
+                                ST
+                            </div>
+<button class="text-text-muted opacity-0 group-hover:opacity-100 transition-opacity hover:text-text-primary p-1">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Stark Tech</h4>
+<p class="font-body-sm text-body-sm text-text-muted">1 active project · Next deadline in 1 day</p>
+</div>
+<div class="mt-auto pt-4 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-status-warning/10 border border-status-warning/20 font-caption text-caption text-status-warning">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+                                At Risk
+                            </span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-bg-elevated rounded-xl p-scale-md flex flex-col gap-4 group cursor-pointer hover:bg-surface-variant transition-colors border border-transparent hover:border-subtle">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-status-info font-medium border border-subtle group-hover:border-status-info/30 transition-colors">
+                                NI
+                            </div>
+<button class="text-text-muted opacity-0 group-hover:opacity-100 transition-opacity hover:text-text-primary p-1">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Nexus Industries</h4>
+<p class="font-body-sm text-body-sm text-text-muted">7 active projects · Next deadline in 12 days</p>
+</div>
+<div class="mt-auto pt-4 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-primary/10 border border-primary/20 font-caption text-caption text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Active
+                            </span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-bg-elevated rounded-xl p-scale-md flex flex-col gap-4 group cursor-pointer hover:bg-surface-variant transition-colors border border-transparent hover:border-subtle">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-text-muted font-medium border border-subtle group-hover:border-text-muted/30 transition-colors">
+                                VZ
+                            </div>
+<button class="text-text-muted opacity-0 group-hover:opacity-100 transition-opacity hover:text-text-primary p-1">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Vanguard Zenith</h4>
+<p class="font-body-sm text-body-sm text-text-muted">0 active projects · No upcoming deadlines</p>
+</div>
+<div class="mt-auto pt-4 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-surface-container-high border border-strong font-caption text-caption text-text-muted">
+<span class="w-1.5 h-1.5 rounded-full bg-text-disabled"></span>
+                                Inactive
+                            </span>
+</div>
+</div>
+<!-- Empty State / Add New Card -->
+<div class="bg-bg-elevated/50 border border-dashed border-strong rounded-xl p-scale-md flex flex-col items-center justify-center gap-3 cursor-pointer hover:bg-bg-elevated hover:border-primary/50 transition-all group min-h-[180px]">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-text-muted group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted group-hover:text-primary transition-colors font-medium">Add New Client</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

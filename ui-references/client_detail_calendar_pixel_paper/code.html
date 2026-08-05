@@ -1,0 +1,545 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Pixel &amp; Paper - Client Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#323537",
+                    "surface-container-low": "#191c1e",
+                    "on-error-container": "#ffdad6",
+                    "status-info": "#60A5FA",
+                    "background": "#111416",
+                    "on-background": "#e1e2e5",
+                    "text-disabled": "#5E656D",
+                    "surface-container": "#1d2022",
+                    "primary-fixed-dim": "#4de082",
+                    "on-primary-fixed": "#00210c",
+                    "surface-container-high": "#272a2c",
+                    "inverse-primary": "#006d36",
+                    "error-container": "#93000a",
+                    "text-muted": "#8C949C",
+                    "bg-elevated": "#1B2024",
+                    "surface-container-highest": "#323537",
+                    "bg-secondary": "#151A1D",
+                    "outline-variant": "#3d4a3e",
+                    "tertiary-fixed-dim": "#73db9a",
+                    "secondary": "#4ae176",
+                    "surface-bright": "#37393c",
+                    "on-error": "#690005",
+                    "secondary-container": "#00b954",
+                    "outline": "#869486",
+                    "on-surface-variant": "#bccabb",
+                    "primary-container": "#4ade80",
+                    "secondary-fixed-dim": "#4ae176",
+                    "on-secondary-fixed": "#002109",
+                    "surface-tint": "#4de082",
+                    "on-tertiary": "#00391d",
+                    "inverse-on-surface": "#2e3133",
+                    "tertiary-container": "#70d998",
+                    "text-primary": "#F5F7F8",
+                    "on-primary-fixed-variant": "#005227",
+                    "status-danger": "#F87171",
+                    "on-primary": "#003919",
+                    "surface-container-lowest": "#0c0f11",
+                    "tertiary-fixed": "#8ff8b4",
+                    "on-tertiary-fixed-variant": "#00522d",
+                    "surface-dim": "#111416",
+                    "tertiary": "#8df6b2",
+                    "on-secondary-container": "#004119",
+                    "surface": "#111416",
+                    "primary-fixed": "#6dfe9c",
+                    "text-secondary": "#C8CDD1",
+                    "inverse-surface": "#e1e2e5",
+                    "on-primary-container": "#005e2d",
+                    "border-strong": "rgba(255, 255, 255, 0.12)",
+                    "border-subtle": "rgba(255, 255, 255, 0.06)",
+                    "on-tertiary-container": "#005e34",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed": "#00210f",
+                    "on-secondary-fixed-variant": "#005321",
+                    "secondary-fixed": "#6bff8f",
+                    "on-surface": "#e1e2e5",
+                    "primary": "#6bfb9a",
+                    "on-secondary": "#003915",
+                    "status-success": "#4ADE80",
+                    "status-warning": "#FACC15"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max-width": "1200px",
+                    "gutter": "24px",
+                    "scale-lg": "24px",
+                    "scale-sm": "8px",
+                    "scale-2xl": "48px",
+                    "scale-xs": "4px",
+                    "margin": "32px",
+                    "scale-md": "16px",
+                    "scale-xl": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Inter"
+                    ],
+                    "headline-sm": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Inter"
+                    ],
+                    "body-sm": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Inter"
+                    ],
+                    "caption": [
+                            "Inter"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-sm": [
+                            "20px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "caption": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Hide scrollbar for clean UI but allow scroll */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex overflow-hidden">
+<!-- SideNavBar -->
+<nav class="w-[240px] h-screen sticky left-0 top-0 bg-surface dark:bg-surface border-r border-strong dark:border-strong flex flex-col p-scale-md z-40 hidden md:flex shrink-0">
+<!-- Brand Logo & Header -->
+<div class="flex items-center gap-3 mb-scale-xl px-2">
+<div class="w-10 h-10 rounded-lg bg-bg-elevated flex items-center justify-center overflow-hidden border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="A minimalist logo design for a creative agency named Pixel &amp; Paper. The logo features abstract geometric shapes in high-contrast black and bright accent green, set against a dark charcoal background. Clean lines, modern sans-serif typography, and a sophisticated, developer-focused aesthetic. The overall mood is precise and technical." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCehG5__OTwrLdJpzx6RzfMOte2UFhItXNJ0h7FYRbv3o1HdbmoyqYldG5lAtSGxNRxU2MkxeH81pc0nKxPY7KxDN8AFnCEGjlRuLWAlNuVYOZvwI-zVxdQDVKb3YgCAeViMXTritVpgGT1zOvnVTxPG8AhrnuNfrG3ErlKFPvAwWZgQC4ThE1yO62EgEfc5EuOqHbujZ_NhKeBGNsHWWhDG1a5k-Idr_cyrYvX15COw4X74eGiK09E">
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary tracking-tight">Pixel &amp; Paper</h1>
+<p class="font-caption text-caption text-text-muted">Creative OS</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary font-body-sm text-body-sm hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-text-primary transition-colors">dashboard</span>
+<span class="group-hover:text-text-primary transition-colors">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-primary dark:text-primary font-body-sm text-body-sm font-medium bg-secondary-container/10 rounded-lg" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">group</span>
+<span>Clients</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary font-body-sm text-body-sm hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-text-primary transition-colors">edit_square</span>
+<span class="group-hover:text-text-primary transition-colors">Editors</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-text-secondary dark:text-text-secondary font-body-sm text-body-sm hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-text-primary transition-colors">fact_check</span>
+<span class="group-hover:text-text-primary transition-colors">Approvals</span>
+</a>
+</div>
+<!-- CTA Bottom -->
+<div class="mt-auto pt-4 border-t border-border-subtle">
+<button class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-primary text-on-primary font-body-sm text-body-sm font-medium rounded-lg hover:bg-primary-container transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                New Project
+            </button>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
+<!-- TopNavBar (Mobile only for Nav, but acts as header here too) -->
+<header class="h-16 w-full sticky top-0 z-30 bg-surface/80 dark:bg-surface/80 backdrop-blur-md flex justify-between items-center px-scale-lg border-b border-border-subtle shrink-0">
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-text-secondary hover:text-text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-text-muted">
+<a class="hover:text-text-primary transition-colors" href="#">Clients</a>
+<span class="text-text-disabled">/</span>
+<span class="text-text-primary font-medium">Acme Corp</span>
+</div>
+<!-- Global Actions -->
+<div class="flex items-center gap-4">
+<button class="text-text-muted hover:text-text-primary transition-colors active:opacity-80">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-border-strong">
+<img class="w-full h-full object-cover" data-alt="A small, circular avatar portrait of a professional individual against a neutral dark grey background. High resolution, sharp focus, well-lit with soft studio lighting. Subtle modern styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALtD57_sJ2_WFRf_6cVIXjNywyMfq5CsZhn1_iDgusEEupm5Ivnh5k8FdJqE5pwhjx7YRblPoSPa9sjk4zppYmYa5FVXekVXx0yyM5U-EcFMndxl_toRpiUX4q0-j6qBZXiTJZKgpjCKRR7r_0XT9E9n7Tppyb55Pdn-M0R_Aufav9Z-hl4qE9A1-BCdvf-mh6NU-tL2RtgcDlcjWfBJuoLGLwAKA7ZfxQl7TeOFEgW0kk0KY-xa1o">
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto p-scale-lg lg:p-margin pb-32">
+<div class="max-w-max-width mx-auto">
+<!-- Client Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-scale-xl">
+<div class="flex items-center gap-6">
+<!-- Client Logo -->
+<div class="w-20 h-20 rounded-xl bg-bg-secondary border border-border-strong flex items-center justify-center overflow-hidden shrink-0 shadow-[0_8px_32px_rgba(0,0,0,0.18)]">
+<img class="w-full h-full object-cover p-2" data-alt="A stylized logo for a fictional company named Acme Corp. The logo features a bold, geometric 'A' formed by minimalist intersecting lines in a high-contrast palette of stark white and bright, saturated neon green against a deep charcoal background. Professional, modern, and sleek." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBODMhmro5UYBNh4L9U2J-ITwr0lopWtbP2N74mWVI2WSPy4BsR5WnV02uMet64ymuH0DpNaDXvpVkpEIM0-KvaWFSE-F1mJsO9fnBsIB93SU8chCNt7hbeqh9JhXTKYRUlMKKfpHL4TW1x26VYTYNvX6y-o6IPgZgGjGjgXG5CPjbOcvF9mEgi8CJ-k7wOR-5yYZMQq_u3Rale5de0Z1GeleJItuFLA9VUCJmnXqqx6WORoXO19VBe">
+</div>
+<div>
+<div class="flex items-center gap-3 mb-1">
+<h2 class="font-headline-xl text-headline-xl text-text-primary">Acme Corp</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-status-success/10 border border-status-success/20 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+<span class="font-caption text-caption text-status-success font-medium">Active Client</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">Enterprise SaaS • San Francisco, CA</p>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 px-6 py-2.5 bg-primary text-on-primary font-body-sm text-body-sm font-medium rounded-lg hover:bg-primary-container transition-colors active:scale-95 duration-150 shrink-0">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                        New Project
+                    </button>
+</div>
+<!-- Main Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column (Content & Tabs) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Tabs -->
+<div class="flex items-center gap-1 border-b border-border-strong pb-[-1px]">
+<button class="tab-btn px-4 py-3 font-body-sm text-body-sm font-medium text-primary border-b-2 border-primary transition-colors" data-target="tab-projects">
+                                Projects
+                            </button>
+<button class="tab-btn px-4 py-3 font-body-sm text-body-sm font-medium text-text-muted hover:text-text-primary border-b-2 border-transparent hover:border-border-subtle transition-colors" data-target="tab-brand">
+                                Brand Kit
+                            </button>
+<button class="tab-btn px-4 py-3 font-body-sm text-body-sm font-medium text-text-muted hover:text-text-primary border-b-2 border-transparent hover:border-border-subtle transition-colors" data-target="tab-calendar">
+                                Calendar
+                            </button>
+</div>
+<!-- Tab Content: Projects -->
+<div class="tab-content active space-y-4" id="tab-projects">
+<!-- Project Card 1 -->
+<div class="p-5 bg-bg-secondary border border-border-subtle rounded-xl hover:border-border-strong transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors">Q3 Marketing Site Redesign</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Full structural overhaul and copy refresh.</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-variant text-text-secondary font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span>
+                                        Due Oct 15
+                                    </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-4 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="p-5 bg-bg-secondary border border-border-subtle rounded-xl hover:border-border-strong transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors">Social Asset Template V2</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Figma component library for Q4 campaigns.</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-variant text-text-secondary font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span>
+                                        Due Nov 01
+                                    </span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-4 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 20%"></div>
+</div>
+</div>
+</div>
+<!-- Tab Content: Brand Kit (Detailed view) -->
+<div class="tab-content space-y-8" id="tab-brand">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-4">Core Palette</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="group relative">
+<div class="h-24 rounded-t-lg bg-[#FF5733] border border-border-subtle border-b-0"></div>
+<div class="p-3 bg-bg-secondary rounded-b-lg border border-border-subtle">
+<div class="font-body-sm text-body-sm text-text-primary font-medium">Acme Orange</div>
+<div class="font-caption text-caption text-text-muted mt-1 uppercase">#FF5733</div>
+</div>
+</div>
+<div class="group relative">
+<div class="h-24 rounded-t-lg bg-[#111416] border border-border-subtle border-b-0"></div>
+<div class="p-3 bg-bg-secondary rounded-b-lg border border-border-subtle">
+<div class="font-body-sm text-body-sm text-text-primary font-medium">Deep Charcoal</div>
+<div class="font-caption text-caption text-text-muted mt-1 uppercase">#111416</div>
+</div>
+</div>
+<div class="group relative">
+<div class="h-24 rounded-t-lg bg-[#F5F7F8] border border-border-subtle border-b-0"></div>
+<div class="p-3 bg-bg-secondary rounded-b-lg border border-border-subtle">
+<div class="font-body-sm text-body-sm text-text-primary font-medium">Off White</div>
+<div class="font-caption text-caption text-text-muted mt-1 uppercase">#F5F7F8</div>
+</div>
+</div>
+<div class="group relative flex items-center justify-center h-full min-h-[146px] border border-dashed border-border-strong rounded-lg hover:bg-surface-variant cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-text-muted">add</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-4">Typography</h3>
+<div class="bg-bg-secondary border border-border-subtle rounded-xl p-5 space-y-6">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-body-sm text-body-sm text-text-muted">Primary (Headings)</span>
+<span class="font-caption text-caption text-text-muted border border-border-subtle px-2 py-0.5 rounded">Inter SemiBold</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-text-primary">The quick brown fox jumps over the lazy dog.</div>
+</div>
+<div class="pt-6 border-t border-border-subtle">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-body-sm text-body-sm text-text-muted">Secondary (Body)</span>
+<span class="font-caption text-caption text-text-muted border border-border-subtle px-2 py-0.5 rounded">Inter Regular</span>
+</div>
+<div class="font-body-lg text-body-lg text-text-primary">Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump!</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab Content: Calendar -->
+<div class="tab-content" id="tab-calendar">
+<div class="bg-bg-secondary border border-border-subtle rounded-xl overflow-hidden">
+<!-- Calendar Header -->
+<div class="p-4 border-b border-border-subtle flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium">October 2023</h3>
+<div class="flex gap-2">
+<button class="p-1.5 rounded-md hover:bg-surface-variant text-text-secondary transition-colors"><span class="material-symbols-outlined text-[20px]">chevron_left</span></button>
+<button class="p-1.5 rounded-md hover:bg-surface-variant text-text-secondary transition-colors"><span class="material-symbols-outlined text-[20px]">chevron_right</span></button>
+</div>
+</div>
+<!-- Calendar Grid (Simplified styling) -->
+<div class="grid grid-cols-7 gap-px bg-border-subtle">
+<!-- Days of week -->
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Sun</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Mon</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Tue</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Wed</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Thu</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Fri</div>
+<div class="bg-bg-secondary p-2 text-center font-caption text-caption text-text-muted">Sat</div>
+<!-- Empty slots (prev month) -->
+<div class="bg-bg-secondary h-24 p-2 opacity-50"></div>
+<!-- Days (example layout) -->
+<div class="bg-bg-secondary h-24 p-2 border-t border-transparent hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">1</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">2</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">3</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">4</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">5</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">6</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">7</span>
+</div>
+<!-- Row 2 -->
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">8</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group relative">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">9</span>
+<div class="absolute bottom-2 left-2 flex gap-1">
+<div class="w-2 h-2 rounded-full bg-status-danger" title="Urgent Deadline"></div>
+</div>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">10</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">11</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">12</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">13</span>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">14</span>
+</div>
+<!-- Row 3 -->
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group relative">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">15</span>
+<div class="absolute bottom-2 left-2 flex gap-1">
+<div class="w-2 h-2 rounded-full bg-status-success" title="Project Milestone"></div>
+</div>
+</div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group">
+<span class="font-body-sm text-body-sm text-text-secondary group-hover:text-text-primary">16</span>
+</div>
+<!-- Pad out rest for visual demo -->
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group"><span class="font-body-sm text-body-sm text-text-secondary">17</span></div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group"><span class="font-body-sm text-body-sm text-text-secondary">18</span></div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group"><span class="font-body-sm text-body-sm text-text-secondary">19</span></div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group"><span class="font-body-sm text-body-sm text-text-secondary">20</span></div>
+<div class="bg-bg-secondary h-24 p-2 hover:bg-surface-variant transition-colors group"><span class="font-body-sm text-body-sm text-text-secondary">21</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (Sidebar / Brand Kit Summary) -->
+<div class="lg:col-span-4 space-y-6">
+<div class="p-5 bg-bg-elevated border border-border-strong rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.18)] sticky top-24">
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-4 flex items-center justify-between">
+                                Brand Snapshot
+                                <span class="material-symbols-outlined text-[18px] text-text-muted">palette</span>
+</h3>
+<!-- Tiny Swatches -->
+<div class="mb-5">
+<div class="font-caption text-caption text-text-muted mb-2 uppercase tracking-wider">Colors</div>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full bg-[#FF5733] border border-border-subtle" title="Acme Orange"></div>
+<div class="w-8 h-8 rounded-full bg-[#111416] border border-border-subtle" title="Deep Charcoal"></div>
+<div class="w-8 h-8 rounded-full bg-[#F5F7F8] border border-border-subtle" title="Off White"></div>
+</div>
+</div>
+<!-- Typography Summary -->
+<div class="mb-5">
+<div class="font-caption text-caption text-text-muted mb-2 uppercase tracking-wider">Typeface</div>
+<div class="font-body-sm text-body-sm text-text-primary bg-surface-variant px-3 py-2 rounded border border-border-subtle">
+                                    Inter (Sans-Serif)
+                                </div>
+</div>
+<!-- Assets Link -->
+<div>
+<a class="flex items-center justify-between p-3 rounded-lg border border-border-subtle hover:bg-surface-variant transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-surface rounded text-text-secondary group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">folder_zip</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-primary">Download Assets</span>
+</div>
+<span class="material-symbols-outlined text-text-muted text-[18px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Simple Tab Logic -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset all
+                    tabBtns.forEach(b => {
+                        b.classList.remove('text-primary', 'border-primary');
+                        b.classList.add('text-text-muted', 'border-transparent');
+                    });
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Activate clicked
+                    btn.classList.remove('text-text-muted', 'border-transparent');
+                    btn.classList.add('text-primary', 'border-primary');
+                    
+                    const targetId = btn.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body></html>
